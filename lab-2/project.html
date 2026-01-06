@@ -162,6 +162,17 @@
 
         <button type="submit">Submit</button>
     </form>
+    <p id="moisture">soilmoisture:</p>
+    <button onclick="update()">update</button>
+        <script src="external.js"></script>
+        <script>
+            function update(){
+                document.write("soilmoisture:")
+                soilmoisture=soilmoisture+5
+                document.getElementById("moisture").innerHTML=soilmoisture+"%"
+            }
+            document.write(soilmoisture)
+        </script>
         <footer class="footer">
         &copy; 2025 Smart Harvest
         </footer>
