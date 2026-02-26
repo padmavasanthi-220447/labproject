@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>Bhumi Gyaan</title>
+        <link rel="icon" type="image/jpeg" href="p.png">
+
+         <link rel="stylesheet" href="s.css">
+
+    <style>
+        .main{
+            font-size:25px;
+        }
+        h1{
+            text-align:center;
+            margin-top:20px;
+            text-shadow:2px 2px 5px grey;
+        }
+        p{
+            text-align:justify;
+        }
+        
+        h3{
+           text-shadow:2px 2px 5px grey;
+        }
+        .footer{
+            position:sticky;
+            height:10vh;
+            bottom:0;
+            left:0;
+            width:100%;
+            background-color:grey;
+            color:white;
+            text-align:center;
+        }
+        .s{
+            align-items:center;
+            display:flex;
+            justify-content:center;
+            height:80vh;
+        }
+            .s img{
+                width:500px;
+                height:400px;
+                border:5px solid yellow;
+            }
+        
+        .nav-links{
+            background-color:#2e7a7d;
+            padding:5px;
+            text-align:center;
+            position:sticky;
+            top:0;
+         }
+        .nav-links a{
+            color:white;
+            text-decoration:none;
+            margin:0 10px;
+            font-size:18px;
+            display:block;
+            font-weight:bold;
+        }
+        .nav-links a:hover{
+            text-decoration:underline;
+            color:orange;
+        }
+        .v{
+            align-items:center;
+            display:flex;
+            justify-content:center;
+
+        }
+        
+
+       
+        
+        
+    </style>
+    </head>
+    <body  bgcolor="fffde7" class="main">
+        <div >
+        <h1>Welcome To Smart Agriculture</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">home</a>
+            <a href="crops.html">Crops</a>
+            <a href="weather.html">weather</a>
+            <a href="smir.html">contact</a>.
+        </nav>
+        <h2>Farming is more than a profession-it is a way of life</h2>
+        <div>
+        <p>Smart Agriculture empowers farmers by combining traditional knowledge with digital innovation,helping them grow better 
+            better crops,use resources wisely,and build a greener future for generations to come.</p>
+            </div>
+        <ol>
+       <li><h3>Crop Monitoring</h3></li>
+        <p><h4>Track crop health,growth and soil conditions</h4></p>
+        <li><h3>Weather Updates</h3></li>
+        <p><h4>get real time weather information for better planning</h4></p>
+        <li><h3>Smart Irrigation</h3></li>
+        <p><h4>Optimize watre usage using Soil Moisture Data</h4></p>
+        </ol>
+        <div class="s">
+        <img src="c.png">
+        <img src="i.png">
+        </div>
+        <p>Smart agriculture videos showcase high-tech farming using drones for crop monitoring, robots for planting
+            harvesting,sensors (IoT) for soil data, AI for analysis, and automation for efficiency, all aiming for
+            higher yields and sustainability, with visuals of futuristic farms, data dashboards,and automated tasks.
+            These videos illustrate how data from connected devices helps farmers make real-time decisions for 
+            precision irrigation, fertilization, and overall crop management, transforming agriculture into a 
+            data-driven industry. </p>
+
+            <video width="400" class="v" controls>
+                <source src="sm.mp4" type="video/mp4">
+            </video>
+        <p>In smart agriculture, audio-related applications primarily involve acoustic monitoring for tracking biodiver
+        sity and livestock health, and using audio messages via ICT for farmer education and decision-making.Smart audio 
+        sensors equipped with AI species recognition can identify the calls of birds, pollinators, and other wildlife. 
+        This non-invasive method helps assess the health and variety of the local ecosystem, providing data for conservation
+         and land-use decisions</p> 
+       
+        <div>
+        <audio controls>
+            <source src="farm.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+        <p>Smart agriculture leverages modern technology to optimize farming practices, improve efficiency, and enhance
+             sustainability. Key technologies include the Internet of Things (IoT) sensors, drones for field monitoring,
+             GPS-guided systems for precision planting, and data analytics platforms that inform decisions regarding 
+             irrigation and fertilization. This approach enables farmers to manage resources more effectively,
+              reduce waste, and increase yields while minimizing environmental impact. Ultimately, smart agriculture helps in 
+              addressing global food security challenges by making food production systems more resilient and productive.</p>
+               
+        <iframe width="500" height="200" src="pt.pdf" frameborder="0" allowfullscreen>
+        </iframe>
+        <br>
+        <br>
+        <div>
+        Want to register? <a href="register.html">Register</a>
+        </div>
+        <div>
+        Already registered? <a href="login.html">Login</a>
+        </div>
+    
+
+
+
+
+    
+    <p id="moisture">soilmoisture:</p>
+    <p id="output">result</p>
+    <p id="title">smart farming</p>
+    <button onclick="showmessage()">show</button>
+    <button onclick="calculateyield()">calculate</button>
+    <button onclick="changetitle()">changetitle</button>
+    <button onclick="testfunctions()">run test function</button>
+    <button onclick="update()">update</button>
+    <button onclick="showalert()">check soil moisture</button>
+    <button onclick="confirmirrigation()">crop checking</button>
+    <button onclick="entercrop()">enter crop</button>
+    <input type="text" id="name">
+        <script src="external.js"></script>
+        <script>
+            function update(){
+                soilmoisture=soilmoisture+5
+                document.getElementById("moisture").innerHTML="soil moisture:"+soilmoisture+"%"
+            }
+            document.write(soilmoisture)
+            document.getElementById("name").addEventListener("keydown",()=>{
+                console.log("key pressed");
+            });
+        </script>
+
+        
+    
+     <footer class="footer">
+        &copy; 2025 Smart Harvest
+    </footer>
+
+
+
+
+
+        
+        
+
+    </body>
+    
+</html>
+
+ 
